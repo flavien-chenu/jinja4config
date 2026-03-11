@@ -42,13 +42,13 @@ pip install -r requirements.txt
 ### Using Docker
 
 ```bash
-docker pull ghcr.io/flavienchenu/jinja4config:latest
+docker pull ghcr.io/flavien-chenu/jinja4config:latest
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/flavienchenu/jinja4config.git
+git clone https://github.com/flavien-chenu/jinja4config.git
 cd jinja4config
 pip install -r requirements.txt
 chmod +x build.py
@@ -352,7 +352,7 @@ config: "{{ environments[current] }}"
 ### Pull the Image
 
 ```bash
-docker pull flavienchenu/jinja4config:latest
+docker pull flavien-chenu/jinja4config:latest
 ```
 
 ### Basic Usage
@@ -360,7 +360,7 @@ docker pull flavienchenu/jinja4config:latest
 Mount your project directory and run:
 
 ```bash
-docker run -v $(pwd):/workspace flavienchenu/jinja4config \
+docker run -v $(pwd):/workspace flavien-chenu/jinja4config \
   --config config.yaml \
   template.conf.j2
 ```
@@ -371,7 +371,7 @@ docker run -v $(pwd):/workspace flavienchenu/jinja4config \
 docker run -v $(pwd):/workspace \
   -e DATABASE_HOST=prod-db.example.com \
   -e API_KEY=secret123 \
-  ghcr.io/flavienchenu/jinja4config \
+  ghcr.io/flavien-chenu/jinja4config \
   --config config.yaml \
   app.conf.j2
 ```
@@ -382,7 +382,7 @@ docker run -v $(pwd):/workspace \
 version: '3.8'
 services:
   config-builder:
-    image: flavienchenu/jinja4config:latest
+    image: flavien-chenu/jinja4config:latest
     volumes:
       - ./config:/workspace
     environment:
@@ -730,10 +730,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/flavienchenu/jinja4config/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/flavienchenu/jinja4config/discussions)
+- **Issues**: [GitHub Issues](https://github.com/flavien-chenu/jinja4config/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/flavien-chenu/jinja4config/discussions)
 
 
-**Made with ❤️ by [Flavien Chenu](https://github.com/flavienchenu)**
+**Made with ❤️ by [Flavien Chenu](https://github.com/flavien-chenu)**
 
 If you find this tool useful, please consider giving it a ⭐ on GitHub!
